@@ -14,4 +14,5 @@ urlpatterns = [
 
     # For example, the URL rango/category/python-books/ would result
     # in the category_name_slug having the value python-books.
+    url(r'^register/$', views.register, name='register'),
 ]
