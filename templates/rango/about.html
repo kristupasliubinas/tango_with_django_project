@@ -1,23 +1,15 @@
-<DOCTYPE! html>
-  
-  {% load staticfiles %}
-  
-  <html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+    <h1>This tutorial has been put together by Kristupas Liubinas</h1>
     
-    <head>
-      <title>Rango</title>
-    </head>
-    
-    <body>
-      <h1>This tutorial has been put together by Kristupas Liubinas</h1>
-      
-      <div>
-        <a href="/rango/">Index</a><br />
-        <img src="{% static "images/johnny.jpg" %}"
+    <img src="{% static "images/johnny.jpg" %}"
              alt="Picture of Johnny Depp as Rango" />
-        <img src="{{ MEDIA_URL}}cat.jpg" 
+    <img src="{{ MEDIA_URL}}cat.jpg" 
              alt="Picture of a cat" />
-      </div>
-    </body>
-    
-  </html>
+{% endblock %}
